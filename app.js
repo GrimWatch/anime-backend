@@ -11,7 +11,7 @@ const scrapeRouter=require("./routers/scrapeRouter");
 const contentRouter=require("./routers/constantRounter");
 
 
-const PORT=3000;
+const PORT=3001;
 
 app.use("/api/v1/",scrapeRouter);
 app.use("/api/v1/constant/",contentRouter);
