@@ -19,7 +19,7 @@ exports.getFilterAnime = async (req, res) => {
 
         const url = `https://anitaku.to/filter.html?keyword=${search}${genre}${country}${season}${year}${language}${type}${status}&sort=${order}&page=${pages}`;
 
-
+        console.log(url)
         const browser = await puppeteer.launch({ headless: 'new', });
         const page = await browser.newPage();
         await page.goto(url);
