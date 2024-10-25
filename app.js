@@ -18,3 +18,5 @@ app.use("/api/v1/constant/",contentRouter);
 
 
 app.listen(PORT,()=>{console.log("app is running")});
+
+module.exports = app;
